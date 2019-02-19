@@ -55,3 +55,21 @@ coupons.each do |coupon|
 end
 
 puts "Your total is #{checkout(cart: cart, coupons: coupons)}"
+
+def consolidate_cart(cart: [])
+	new_cart = {}
+
+	cart.each do |i|
+	item_name = i.keys[0]
+
+	new_cart[item_name] = i.values[0]
+
+	if new_cart[item_name][:count]
+		new_cart[item_name][:count] =+ 1
+	else
+		new_cart[item_name][:count] = 1
+	end
+end
+ new_cart
+
+end
