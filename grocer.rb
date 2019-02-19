@@ -19,7 +19,7 @@ def consolidate_cart(cart:[])
   end
 
    new_cart
-end	end
+end
 
 
  def apply_coupons(cart:[], coupons:[])	def apply_coupons(cart:[], coupons:[])
@@ -51,7 +51,7 @@ end	end
   end
 
    new_cart
-end	end
+end	
 
 
  def apply_clearance(cart:[])	def apply_clearance(cart:[])
@@ -62,12 +62,11 @@ end	end
   end
 
    cart
-end	end
+end	
 
 
  def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
   # code here	  total = 0.00
-end
    cart = consolidate_cart(cart: cart)
   cart = apply_coupons(cart: cart, coupons: coupons)
   cart = apply_clearance(cart: cart)
@@ -80,4 +79,4 @@ end
 
    total > 100 ? total * 0.90 : total
 end
-end
+
