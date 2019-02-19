@@ -51,7 +51,7 @@ end
   end
 
    new_cart
-end	
+end
 
 
  def apply_clearance(cart:[])	def apply_clearance(cart:[])
@@ -62,7 +62,7 @@ end
   end
 
    cart
-end	
+end
 
 
  def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
@@ -79,4 +79,3 @@ end
 
    total > 100 ? total * 0.90 : total
 end
-
