@@ -22,7 +22,7 @@ def consolidate_cart(cart:[])
 end
 
 
- def apply_coupons(cart:[], coupons:[])	def apply_coupons(cart:[], coupons:[])
+   def apply_coupons(cart:[], coupons:[])
   # code here
    new_cart = {}
 
@@ -54,7 +54,7 @@ end
 end
 
 
- def apply_clearance(cart:[])	def apply_clearance(cart:[])
+ def apply_clearance(cart:[])	
   # code here	  cart.each do |food_item, info_hash|
     if info_hash[:clearance] == true
       info_hash[:price] = (info_hash[:price]*0.8).round(2)
@@ -65,7 +65,7 @@ end
 end
 
 
- def checkout(cart: [], coupons: [])	def checkout(cart: [], coupons: [])
+ def checkout(cart: [], coupons: [])	
   # code here	  total = 0.00
    cart = consolidate_cart(cart: cart)
   cart = apply_coupons(cart: cart, coupons: coupons)
